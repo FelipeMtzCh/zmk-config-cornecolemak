@@ -279,12 +279,12 @@
              [GUI]  [MO1/ESC]  [Space]  |  [Enter]  [MO2]  [Del]
         ─────────────────────────────────── */
 
-        default_layer {
+        Colemak-DH {
             display-name = "Colemak-DH";
             bindings = <
-&kp GRAVE   &kp Q       &kp W       &kp F        &kp P         &kp B        &kp J      &kp L         &kp U        &kp Y       &kp SEMI       &kp BSPC
-&caps_word  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHIFT T  &kp G        &kp M      &mt RSHIFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O     &kp SQT
-&term       &kp Z       &kp X       &kp C        &kp D         &kp V        &kp K      &kp H         &kp COMMA    &kp DOT     &kp FSLH       &kp TAB
+&kp GRAVE   &kp Q       &kp W       &kp F        &kp P         &kp B        &kp J      &kp L         &kp U        &kp Y       &kp SEMI    &kp BSPC
+&caps_word  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHIFT T  &kp G        &kp M      &mt RSHIFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O  &kp SQT
+&term       &kp Z       &kp X       &kp C        &kp D         &kp V        &kp K      &kp H         &kp COMMA    &kp DOT     &kp FSLH    &kp TAB
                                     &kp LGUI     &lt 1 ESC     &kp SPACE    &kp ENTER  &mo 2         &kp DELETE
             >;
         };
@@ -307,7 +307,7 @@
            CAPA 2 — Config / Media / Combos
         ─────────────────────────────────── */
 
-        raise_layer {
+        Config {
             display-name = "Config";
             bindings = <
 &kp ESC     &kp F2           &kp F3                          &kp F4                           &kp F5                             &kp F11                              &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp UP      &trans          &kp C_MUTE         &kp DELETE

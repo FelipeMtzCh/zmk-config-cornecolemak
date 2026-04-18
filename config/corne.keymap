@@ -293,7 +293,7 @@
            CAPA 1 — Símbolos (izq) + Numpad (der)
         ─────────────────────────────────── */
 
-        lower_layer {
+        Sym-Num {
             display-name = "Sym/Num";
             bindings = <
 &td_grave  &td_tilde  &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR    &kp KP_MULTIPLY  &kp N7  &kp N8      &kp N9  &kp KP_SLASH  &kp BSPC

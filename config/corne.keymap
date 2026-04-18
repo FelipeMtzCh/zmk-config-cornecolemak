@@ -44,13 +44,6 @@
     macros {
         /* Macro original: escribe /calificacion */
 
-        cal: cal {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp FSLH &kp C &kp A &kp L &kp I &kp F &kp I &kp C &kp A &kp C &kp I &kp O &kp N>;
-            label = "CAL";
-        };
-
         term: term {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -172,6 +165,13 @@
             #binding-cells = <0>;
             bindings = <&kp TILDE>;
             label = "M_TILDE_C";
+        };
+
+        zendesk_mac: zendesk_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp F &kp E &kp L &kp I &kp P &kp E>;
+            label = "ZENDESK_MAC";
         };
     };
 
@@ -296,10 +296,10 @@
         Sym-Num {
             display-name = "Sym/Num";
             bindings = <
-&td_grave  &td_tilde  &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR    &kp KP_MULTIPLY  &kp N7  &kp N8      &kp N9  &kp KP_SLASH  &kp BSPC
-&trans     &td_paren  &td_brack  &td_brace  &td_angle  &td_dquot     &kp KP_MINUS     &kp N4  &kp N5      &kp N6  &kp KP_PLUS   &kp ENTER
-&trans     &kp UNDER  &kp MINUS  &kp EQUAL  &kp PLUS   &cal          &kp N0           &kp N1  &kp N2      &kp N3  &kp DOT       &kp TAB
-                                 &kp LGUI   &trans     &kp SPACE     &kp ENTER        &trans  &kp DELETE
+&td_grave  &td_tilde  &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR      &kp KP_MULTIPLY  &kp N7  &kp N8      &kp N9  &kp KP_SLASH  &kp BSPC
+&trans     &td_paren  &td_brack  &td_brace  &td_angle  &td_dquot       &kp KP_MINUS     &kp N4  &kp N5      &kp N6  &kp KP_PLUS   &kp ENTER
+&trans     &kp UNDER  &kp MINUS  &kp EQUAL  &kp PLUS   &zendesk_mac    &kp N0           &kp N1  &kp N2      &kp N3  &kp DOT       &kp TAB
+                                 &kp LGUI   &trans     &kp SPACE       &kp ENTER        &trans  &kp DELETE
             >;
         };
 
